@@ -1,8 +1,7 @@
-import { Link, useRouter } from "expo-router"
+import { Link } from "expo-router"
 import { View, Text } from "react-native"
 
 export default function Index() {
-	const router = useRouter()
 	return (
 		<View className="flex-1 items-center gap-2">
 			<Text className="text-2xl">Home screen</Text>

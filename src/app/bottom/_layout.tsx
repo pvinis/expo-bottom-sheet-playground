@@ -1,4 +1,3 @@
-// import { Slot } from "expo-router"
 import { ParamListBase, StackNavigationState } from "@react-navigation/native"
 import {
 	createStackNavigator,
@@ -6,7 +5,6 @@ import {
 	StackNavigationOptions,
 } from "@react-navigation/stack"
 import { withLayoutContext } from "expo-router"
-import { View } from "react-native"
 
 const { Navigator } = createStackNavigator()
 

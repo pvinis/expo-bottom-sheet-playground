@@ -1,5 +1,5 @@
-import { BottomSheetNav } from "@/BottomSheetNav"
 import "@/global.css"
+import { BottomSheetNav } from "@/BottomSheetNav"
 import { Providers } from "@/providers"
 
 export default function RootLayout() {
@@ -7,7 +7,7 @@ export default function RootLayout() {
 		<Providers>
 			<BottomSheetNav
 				screenOptions={{ enableDynamicSizing: false, snapPoints: ["50%"] }}
-			></BottomSheetNav>
+			/>
 		</Providers>
 	)
 }
