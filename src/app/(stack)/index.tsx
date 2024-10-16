@@ -13,7 +13,7 @@ export default function Index() {
 				<Text>Second screen</Text>
 			</Link>
 			<Link href="/bottom">
-				<Text>Open other stack</Text>
+				<Text>Open bottom sheet stack</Text>
 			</Link>
 		</View>
 	)
