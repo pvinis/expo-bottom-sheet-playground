@@ -1,7 +1,8 @@
-import { Link } from "expo-router"
+import { Link, useRouter } from "expo-router"
 import { View, Text } from "react-native"
 
 export default function Index() {
+	const router = useRouter()
 	return (
 		<View className="flex-1 items-center gap-2">
 			<Text className="text-2xl">Home screen</Text>
@@ -12,7 +13,7 @@ export default function Index() {
 				<Text>Second screen</Text>
 			</Link>
 			<Link href="/bottom">
-				<Text>Open bottom stack</Text>
+				<Text>Open bottom sheet stack</Text>
 			</Link>
 		</View>
 	)

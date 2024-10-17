@@ -1,14 +1,19 @@
-import { BottomSheetNavigationOptions } from "@th3rdwave/react-navigation-bottom-sheet"
-import { createBottomSheetNavigator } from "@th3rdwave/react-navigation-bottom-sheet"
+// import { Slot } from "expo-router"
+import { ParamListBase, StackNavigationState } from "@react-navigation/native"
+import {
+	createStackNavigator,
+	StackNavigationEventMap,
+	StackNavigationOptions,
+} from "@react-navigation/stack"
 import { withLayoutContext } from "expo-router"
+import { View } from "react-native"
 
-const { Navigator } = createBottomSheetNavigator()
+const { Navigator } = createStackNavigator()
 
-export const BottomSheet = withLayoutContext<
-	BottomSheetNavigationOptions,
-	typeof Navigator
+export const JsStack = withLayoutContext<
+	StackNavigationOptions,
+	typeof Navigator,
+	StackNavigationState<ParamListBase>,
+	StackNavigationEventMap
 >(Navigator)
-
-export default function BottomLayout() {
-	return <BottomSheet screenOptions={{ snapPoints: ["50%"] }} />
-}
+export default () => <JsStack screenOptions={{ headerShown: false }} />
